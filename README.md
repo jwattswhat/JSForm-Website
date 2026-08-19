@@ -25,7 +25,7 @@ Open `index.html` directly, or serve this directory with any static web server.
 
 - Replace the pending source, documentation, release, issue, and private-security destinations.
 - Add the verified release artifact and its SHA-256 checksum.
-- Replace the School Bus Routes screenshot placeholder with an approved screenshot.
+- Review the four approved School Bus Routes screenshots whenever the sample interface changes.
 - Change the Open Graph image reference to an absolute public URL after the final hostname is known.
 - Confirm the final copyright and contact wording.
 
