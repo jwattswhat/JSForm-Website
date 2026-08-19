@@ -36,6 +36,7 @@ Open `index.html` directly, or serve this directory with any static web server.
 - `security.html` - responsible-disclosure placeholder
 - `privacy.html` - website privacy statement
 - `assets/social-preview.png` - JSForm link-preview artwork
+- `assets/favicon.ico` and companion PNG files - browser and device icons
 - `.github/workflows/pages.yml` - GitHub Pages deployment
 
 ## License
