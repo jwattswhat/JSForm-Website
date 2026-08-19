@@ -21,19 +21,17 @@ Open `index.html` directly, or serve this directory with any static web server.
 4. The included workflow publishes the static files after every push to `main`.
 5. GitHub provides a temporary `github.io` address. A recovered custom domain can be attached later.
 
-## Complete before public announcement
+## Publication maintenance
 
-- Replace the pending source, documentation, release, issue, and private-security destinations.
-- Add the verified release artifact and its SHA-256 checksum.
 - Review the four approved School Bus Routes screenshots whenever the sample interface changes.
-- Change the Open Graph image reference to an absolute public URL after the final hostname is known.
-- Confirm the final copyright and contact wording.
+- Update the release link, checksum, and version copy for every published release.
+- Update the absolute Open Graph URL if a custom domain replaces GitHub Pages.
 
 ## Files
 
 - `index.html` - main project site
 - `support.html` - support-reporting guidance
-- `security.html` - responsible-disclosure placeholder
+- `security.html` - private vulnerability reporting guidance
 - `privacy.html` - website privacy statement
 - `assets/social-preview.png` - JSForm link-preview artwork
 - `assets/favicon.ico` and companion PNG files - browser and device icons
