@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JSForm is an open-source Python framework for building native database desktop applications from JSON definitions.">
+  <meta property="og:title" content="JSForm — Desktop applications defined with JSON">
+  <meta property="og:description" content="An open-source Python framework for native database desktop applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>JSForm — Desktop applications defined with JSON</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="JSForm home"><span>{</span> JSForm <span>}</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#sample">Sample</a>
+      <a href="#getting-started">Get started</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Open-source beta · 0.1.0-beta.1</p>
+        <h1>Desktop applications<br><em>defined with JSON.</em></h1>
+        <p class="lede">JSForm turns structured form definitions into native Python desktop applications—with database records, validation, navigation, visual design tools, and PDF reporting built in.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#getting-started">Explore the beta</a>
+          <a class="button secondary" href="#sample">See the sample app</a>
+        </div>
+        <p class="requirement">Python 3.10+ · wxPython · MariaDB or MySQL · Windows-focused</p>
+      </div>
+      <div class="definition-card" aria-label="Example JSForm definition">
+        <div class="window-bar"><i></i><i></i><i></i><span>student-form.json</span></div>
+        <pre><code><b>{</b>
+  <span>"form"</span>: <q>Student</q>,
+  <span>"table"</span>: <q>tblStudent</q>,
+  <span>"layout"</span>: <q>responsive</q>,
+  <span>"fields"</span>: [
+    <b>{</b> <span>"name"</span>: <q>FullName</q>,
+      <span>"type"</span>: <q>text</q>,
+      <span>"required"</span>: <strong>true</strong> <b>}</b>
+  ]
+<b>}</b></code></pre>
+        <div class="render-arrow">JSON definition <span>→</span> native form</div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="JSForm attributes">
+      <div><strong>Open source</strong><span>LGPL-3.0-or-later</span></div>
+      <div><strong>Native desktop</strong><span>Built with wxPython</span></div>
+      <div><strong>Database ready</strong><span>MariaDB and MySQL</span></div>
+      <div><strong>Your data</strong><span>Local, direct, controlled</span></div>
+    </section>
+
+    <section class="content-section section-shell" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">A practical application framework</p>
+        <h2>Define the data. JSForm handles the routine.</h2>
+        <p>Build consistent database applications without rebuilding the same editing, navigation, validation, and reporting machinery for every screen.</p>
+      </div>
+      <div class="feature-grid">
+        <article><span class="feature-number">01</span><h3>JSON-defined forms</h3><p>Describe fields, relationships, layouts, controls, and behavior in readable files that remain easy to review and customize.</p></article>
+        <article><span class="feature-number">02</span><h3>Database records</h3><p>Navigate, create, update, and validate MariaDB or MySQL records through a consistent native interface.</p></article>
+        <article><span class="feature-number">03</span><h3>Visual screen designer</h3><p>Arrange and customize screens visually while preserving recoverable starter definitions.</p></article>
+        <article><span class="feature-number">04</span><h3>Native reporting</h3><p>Design reusable layouts and generate PDF reports without a separate reporting runtime.</p></article>
+        <article><span class="feature-number">05</span><h3>Reusable behavior</h3><p>Shared handling for dates, times, numbers, choices, phone formatting, dirty-state checks, and linked forms.</p></article>
+        <article><span class="feature-number">06</span><h3>Application hooks</h3><p>Add authentication, permissions, auditing, diagnostics, and application-specific workflows without forking the framework.</p></article>
+      </div>
+    </section>
+
+    <section class="flow-section">
+      <div class="section-shell">
+        <div class="section-heading compact">
+          <p class="eyebrow">How it fits together</p>
+          <h2>Structured definitions, native results.</h2>
+        </div>
+        <div class="flow" aria-label="JSON definitions flow through JSForm into a native user interface connected to a database and reports">
+          <div><small>Define</small><strong>JSON</strong><span>Forms and reports</span></div>
+          <b>→</b>
+          <div class="accent"><small>Build</small><strong>JSForm</strong><span>Framework behavior</span></div>
+          <b>→</b>
+          <div><small>Use</small><strong>Native UI</strong><span>wxPython desktop</span></div>
+          <b>→</b>
+          <div><small>Connect</small><strong>Data + PDF</strong><span>Database and output</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell sample-section" id="sample">
+      <div class="sample-copy">
+        <p class="eyebrow">Included demonstration</p>
+        <h2>Learn through a complete, small application.</h2>
+        <p>The School Bus Routes sample demonstrates forms, choices, parent-child records, ordered route stops, visual screen customization, and a designed PDF route manifest.</p>
+        <ul class="check-list">
+          <li>Schools, drivers, buses, students, routes, and stops</li>
+          <li>Independent sample database and account</li>
+          <li>Screen and report designer examples</li>
+          <li>Intentionally simple enough to study</li>
+        </ul>
+      </div>
+      <div class="screenshot-placeholder" role="img" aria-label="Placeholder for a JSForm School Bus Routes sample screenshot">
+        <div class="placeholder-window">
+          <div class="window-bar"><i></i><i></i><i></i><span>JSForm School Bus Routes</span></div>
+          <div class="placeholder-body">
+            <div class="mini-nav"></div><div class="mini-nav short"></div>
+            <div class="mini-grid"><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <p>Approved application screenshot placeholder</p>
+      </div>
+    </section>
+
+    <section class="beta-section" id="getting-started">
+      <div class="section-shell beta-inner">
+        <div>
+          <p class="eyebrow">Current release</p>
+          <h2>JSForm 0.1.0-beta.1</h2>
+          <p>The framework has entered public beta. Source and installation artifacts will be linked here when the public repository is published.</p>
+        </div>
+        <div class="release-card">
+          <span class="release-label">Beta release</span>
+          <strong>Download link pending</strong>
+          <p>The website is ready before publication so the final repository and verified package links can be added deliberately.</p>
+          <span class="button disabled" aria-disabled="true">Release forthcoming</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-shell resources">
+      <div class="section-heading compact"><p class="eyebrow">Project resources</p><h2>Build in the open.</h2></div>
+      <div class="resource-grid">
+        <div><strong>Source code</strong><span>Public repository link pending</span></div>
+        <div><strong>Documentation</strong><span>Framework guide link pending</span></div>
+        <a href="support.html"><strong>Support</strong><span>How to report a problem</span></a>
+        <a href="security.html"><strong>Security</strong><span>Responsible reporting policy</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand small" href="#top"><span>{</span> JSForm <span>}</span></a>
+    <p>0.1.0-beta.1 · LGPL-3.0-or-later<br>Copyright © 2026 Rev. Jonathan C. Watt</p>
+    <div><a href="support.html">Support</a><a href="security.html">Security</a><a href="privacy.html">Privacy</a></div>
+  </footer>
+</body>
+</html>
